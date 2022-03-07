@@ -1,0 +1,95 @@
+<nav class="navbar navbar-expand-lg navbar-dark primary-background">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><span class="fa fa-asterisk" ></span>TechBlog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a routerLink="/login" routerLinkActive="active" class="nav-link" ><button (click)="logout()">Logout</button></a>
+          </li>
+          <li class="nav-item">
+            <a  routerLink="/admin" routerLinkActive="active" class="nav-link">User Details</a>
+          </li>
+          <li class="nav-item">
+            <a  routerLink="/aarticle" routerLinkActive="active" class="nav-link">Article</a>
+          </li>
+        
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Discription</th>
+    
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let item of articles">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.t}}</td>
+        <td>{{item.discription}}</td>
+        <td><button (click)="openPopup(item)">Update</button></td>
+        <td><button (click)="deleteUser(item)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Article</h4>
+      </div>
+      <div class="modal-body">
+                
+
+        <form [formGroup]="signUpForm" (ngSubmit)="onSubmit(signUpForm.value)"  >
+      
+          <div class="form-group">
+            <label>Title<span style="color:red">*</span></label>
+            <input id="t" formControlName="t" type="text" class="form-control" >
+            <span *ngIf="!signUpForm.get('t').valid && signUpForm.get('t').touched">please enter a valid username!</span>
+          </div>
+          <div class="form-group">
+            <label>Discription<span style="color:red">*</span></label>
+            <input id="discription" formControlName="discription" type="discription" class="form-control" >
+            <span *ngIf="!signUpForm.get('discription').valid && signUpForm.get('discription').touched">please enter a valid email!</span>
+          </div>
+          
+          <div>
+            <button type="submit"  class=" btn btn-primary primary-background">update</button>
+          </div>
+        </form>
+
+
+
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" 
+                (click)="closePopup()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  
+  
+  

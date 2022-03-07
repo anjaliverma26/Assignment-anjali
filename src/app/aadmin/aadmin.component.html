@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark primary-background">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><span class="fa fa-asterisk" ></span>TechBlog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a routerLink="/login" routerLinkActive="active" class="nav-link" ><button (click)="logout()">Logout</button></a>
+          </li>
+          <li class="nav-item">
+            <a  routerLink="/admin" routerLinkActive="active" class="nav-link">User Details</a>
+          </li>
+          <li class="nav-item">
+            <a  routerLink="/aarticle" routerLinkActive="active" class="nav-link">Article</a>
+          </li>
+        
+       Search <input class="form-control" type="text" name="name" [(ngModel)]="name" (ngModelChange)="search()" placeholder="Enter name to search"/>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th (click)="sort('id')" scope="col">Id&nbsp;<i class="fa fa-sort"></i></th>
+        <th (click)="sort('name')" scope="col">Name&nbsp;<i class="fa fa-sort"></i></th>
+       
+        
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let item of users |orderBy: key: reverse| paginate :{itemsPerPage:3, currentPage:p};">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+    
+        <td><button (click)="deleteUser(item)">Delete</button></td>
+      </tr>
+    </tbody>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </table>

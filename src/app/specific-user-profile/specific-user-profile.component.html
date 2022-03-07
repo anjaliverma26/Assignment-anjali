@@ -1,0 +1,63 @@
+<app-navigation></app-navigation>
+<center><h3>Specific User Profile</h3></center>
+<table class="table">
+ 
+    <thead>
+        
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Users</th>
+        <th scope="col">Details</th>
+ 
+      
+
+      
+        
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let item of usersProfile">
+
+          <div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Users Details</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{exactDetail.id}}</p>
+  
+        <p>{{exactDetail.name}}</p>
+        <p>{{exactDetail.email}}</p>
+  <h5> <center><button type="submit" (click)="openPopup(exactDetail.id)"><b>Articles</b></button></center></h5>
+        <p >
+        {{article}}
+        </p>
+        <!-- <p>{{exactDetail.title[0].t}}</p> -->
+      
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" 
+                (click)="[viewDiscription(exactDetail.id),closePopup()]">
+          Close
+        </button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+     <td>{{item.id}}</td>
+        <td scope="row">{{item.name}}</td>
+      <td><button (click)="openPopup(item)">details</button></td>
+      
+        
+    
+      </tr>
+       </tbody>
+  </table>

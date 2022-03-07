@@ -1,0 +1,57 @@
+ 
+<app-navigation></app-navigation>
+<div class="container-fluid p-0 m-0">
+  <div class="jumbotron">
+    <div class="container">
+      <h3 class="display-3">Welcome to TechBlog</h3>
+      <p> Welcome to TechBlog,world of technology A programming language is any set of rules that converts strings, or graphical program elements in the case of visual programming languages, to various kinds of machine code output. Programming languages are one kind of computer language, and are used in computer programming to implement algorithms.
+
+      </p><br>
+    <p>Most of programming language consists of instructions for computers.These arev programmable machine that use a set of specific instructions,rather than general programming languages</p></div>
+    </div></div>
+<div class="row card-group" >
+  <div class="col-md-4" *ngFor="let item of usersArticle">
+    
+    <div class="card" >
+      
+      <button class="btn btn-primary primary-background"  type="submit" (click)="[openPopup(item)]">{{item.t}}</button>
+    
+      <div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h4 class="modal-title">{{title}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{discription}}</p>
+        <!-- <p>{{des}}</p> -->
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" 
+                (click)="closePopup()">
+          Close
+        </button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<img src="https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2020/09/develop-programming-skills.jpg">
+      <!-- <p>Some text</p> 
+      <p>fcvh</p> -->
+    </div>
+    
+  </div>
+  
+</div>
+
+
+
+
+
