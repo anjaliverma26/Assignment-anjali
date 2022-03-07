@@ -15,5 +15,177 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "anji",
+      "email": "anjie@gmail.com",
+      "password": "fda3"
+    },
+    {
+      "name": "harsh",
+      "email": "harsh@gmail.com",
+      "password": "h123",
+      "id": 3
+    },
+    {
+      "name": "vdwgh",
+      "email": "anjali.verma@einfochips.com",
+      "password": "a12",
+      "id": 4
+    },
+    {
+      "name": "ANJALI VERMA",
+      "email": "anjaliverma261999@gmail.com",
+      "password": "th",
+      "id": 5
+    },
+    {
+      "name": "sahil",
+      "email": "sahil@gmail.com",
+      "password": "s123",
+      "id": 6
+    },
+    {
+      "name": "ANJALI VERMA",
+      "email": "anjaliverma261999@gmail.com",
+      "password": "ht",
+      "id": 7
+    },
+    {
+      "name": "Mohit Modi",
+      "email": "mohit@gmail.com",
+      "password": "m123",
+      "id": 8
+    },
+    {
+      "name": "mahima",
+      "email": "m@gmail.co",
+      "password": "m12",
+      "id": 9
+    },
+    {
+      "name": "mahin",
+      "email": "ME@bjm.b",
+      "password": "hg34",
+      "id": 10
+    },
+    {
+      "name": "asmita",
+      "email": "as@gmail.com",
+      "password": "a12",
+      "id": 11
+    },
+    {
+      "name": "ari",
+      "email": "a",
+      "password": "a1",
+      "id": 12
+    },
+    {
+      "name": "ari",
+      "email": "ar",
+      "password": "a1",
+      "id": 13
+    }
+  ],
+  "title": [
+    {
+      "uid": 4,
+      "t": "Java",
+      "discription": "Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language. ",
+      "id": 1
+    },
+    {
+      "uid": 3,
+      "t": "JavaScript",
+      "discription": "JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages.",
+      "id": 3
+    },
+    {
+      "uid": 3,
+      "t": "Python",
+      "discription": "Python is a general purpose, dynamic, high-level, and interpreted programming language. It supports Object Oriented programming approach to develop applications. It is simple and easy to learn and provides lots of high-level data structures.",
+      "id": 4
+    },
+    {
+      "uid": 1,
+      "t": "SQl",
+      "discription": "This database language is mainly designed for maintaining the data in relational database management systems. It is a special tool used by data professionals for handling structured data (data which is stored in the form of tables). It is also designed for stream processing in RDSMS.",
+      "id": 2
+    },
+    {
+      "uid": "5",
+      "t": "Data structure",
+      "discription": "A data structure is a particular way of organizing data in a computer so that it can be used effectively. For example, we can store a list of items having the same data-type using the array data structure. This page contains detailed tutorials on different data structures with topic-wise problems.",
+      "id": 6
+    },
+    {
+      "uid": "5",
+      "t": "Data Structure",
+      "discription": "A data structure is a particular way of organizing data in a computer so that it can be used effectively. For example, we can store a list of items having the same data-type using the array data structure. This page contains detailed tutorials on different data structures with topic-wise problems.",
+      "id": 7
+    },
+    {
+      "uid": "5",
+      "t": "kirtan",
+      "discription": "kt",
+      "id": 9
+    },
+    {
+      "uid": "5",
+      "t": "kirtan",
+      "discription": "kt2",
+      "id": 10
+    },
+    {
+      "uid": "5",
+      "t": "Data",
+      "discription": "Data are individual facts, statistics, or items of information, often numeric. In a more technical sense, data are a set of values of qualitative or quantitative variables about one or more persons or objects, while a datum (singular of data) is a single value of a single variable",
+      "id": 16
+    },
+    {
+      "uid": "5",
+      "t": "s",
+      "discription": "c",
+      "id": 22
+    },
+    {
+      "uid": "5",
+      "t": "hit",
+      "discription": "tit",
+      "id": 24
+    },
+    {
+      "uid": "5",
+      "t": "mum",
+      "discription": "let",
+      "id": 25
+    },
+    {
+      "uid": "5",
+      "t": "mum",
+      "discription": "let",
+      "id": 26
+    },
+    {
+      "uid": "3",
+      "t": "kap",
+      "discription": "lpana",
+      "id": 28
+    },
+    {
+      "uid": "3",
+      "t": "ty",
+      "discription": "ht",
+      "id": 33
+    },
+    {
+      "uid": "3",
+      "t": "ty",
+      "discription": "ht",
+      "id": 34
+    }
+  ]
 }
